@@ -1,1 +1,1 @@
-# Beledwayne-Hospital-
+Upload to GitHub and deploy on Netlify
