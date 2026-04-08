@@ -1,490 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother & Child Health Project | Hirshabelle, Somalia</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/favicon.png">
-</head>
-<body>
-<header class="main">
-    <div class="lower">
-        <div class="image">
-            <div class="logoContainer" onclick="location.href='index.html'">
-                <img src="assets/log.svg" alt="Logo Light" class="logo light-logo">
-                <img src="assets/loggo.svg" alt="Logo Dark" class="logo dark-logo">
-            </div>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-        <div class="mobile-menu">
-            <div class="menu-header"><div class="menu-close" onclick="toggleMenu()">&times;</div></div>
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/causes.html">Funding Plan</a>
-            <a href="pages/contact.html">Contact</a>
-            <div class="socials mobileBtn">
-                <div class="login"><button type="button" class="navBtn btn btn-outline-danger" onclick="redirectToPage()">Donate Now</button></div>
-                <div><button type="button" class="navBtn btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Info</button></div>
-                <div><button id="themeToggle" class="navBtn btn btn-danger" onclick="toggleTheme()"><i class="themeIcon fas fa-moon"></i></button></div>
-            </div>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/causes.html">Funding Plan</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </div>
-    <div class="socials desktopBtn">
-        <div class="login"><button type="button" class="navBtn btn btn-outline-danger" onclick="redirectToPage()">Donate Now</button></div>
-        <div><button type="button" class="navBtn btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Info</button></div>
-        <div><button id="themeToggle" class="navBtn btn btn-danger" onclick="toggleTheme()"><i class="themeIcon fas fa-moon"></i></button></div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="false">
-        <div class="modal-dialog"><div class="modal-content"><div class="modal-header">
-            <h1 class="modal-title fs-5">Contact Information</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>Region: Hirshabelle, Somalia</p>
-            <p>Email: hello@example.com</p>
-            <p>Donation page: replace with your live fundraiser link</p>
-        </div>
-        <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
-        </div></div>
-    </div>
-</header>
-
-<main>
-    <div class="mainbox">
-        <div class="text-content">
-            <p id="heading"><b><u style="text-decoration-color: goldenrod;">Build</u> a safer future</b></p>
-            <p class="subsection">for mothers,</p>
-            <p class="subsection">newborns,</p>
-            <p class="subsection">and children</p>
-            <p id="text" class="subsection">Land has already been donated for this project in Hirshabelle, Somalia. We are now raising funds to build a focused mother and child health facility that starts with maternity care, newborn support, and essential pediatric treatment for underserved families.</p>
-            <button class="donate-btn" onclick="redirectToPage()">Donate now</button>
-        </div>
-        <div class="img">
-            <img src="assets/picture.png" alt="Mother and child illustration">
-        </div>
-    </div>
-</main>
-
-<main class="third">
-    <div class="cards">
-        <div class="card1" style="background-color: rgb(231, 204, 204)">
-            <div class="circle"><i class="fa-solid fa-person-pregnant fa-2x"></i></div>
-            <p id="donate">Phase 1 focus</p>
-            <h3>Maternity & safe delivery</h3>
-            <p><a href="pages/causes.html">See funding plan..</a></p>
-        </div>
-        <div class="card1" style="background-color: rgb(203, 217, 232)">
-            <div class="circle"><i class="fa-solid fa-baby fa-2x"></i></div>
-            <p id="donate">Priority care</p>
-            <h3>Newborn stabilization</h3>
-            <p><a href="pages/causes.html">See funding plan..</a></p>
-        </div>
-        <div class="card1" style="background-color: rgb(178, 210, 178)">
-            <div class="circle"><i class="fa-solid fa-child-reaching fa-2x"></i></div>
-            <p id="donate">Essential services</p>
-            <h3>Pediatric treatment</h3>
-            <p><a href="pages/causes.html">See funding plan..</a></p>
-        </div>
-        <div class="card1" style="background-color: rgb(216, 186, 216)">
-            <div class="circle"><i class="fa-solid fa-prescription-bottle-medical fa-2x"></i></div>
-            <p id="donate">Core support</p>
-            <h3>Pharmacy, lab & sanitation</h3>
-            <p><a href="pages/causes.html">See funding plan..</a></p>
-        </div>
-    </div>
-</main>
-
-<main>
-    <div class="sad">
-        <div class="poverty"><img class="povert" src="assets/poverty.png" alt="Community support"></div>
-        <div class="para">
-            <p id="head">Why this project matters</p>
-            <h2 style="font-size: 3rem; margin-bottom: 25px; font-weight: 600;">A place where mothers and children can reach <u style="text-decoration-color: goldenrod; text-decoration-thickness: 5px;">care sooner</u></h2>
-            <p style="font-size: 1.5rem; margin-bottom: 15px; color: crimson; font-weight: 500;">Start with the highest-impact ward first</p>
-            <p>This campaign is centered on a realistic first build: a mother, newborn, and child clinic that can later grow into a wider health campus.</p>
-            <p>Phase 1 is designed to fund a delivery room, newborn corner, pediatric consultation room, basic pharmacy, simple diagnostics, and essential water and power setup.</p>
-            <p>By focusing on maternity and child survival first, donors can clearly see what their support helps make possible.</p>
-            <div class="button">
-                <a href="pages/about.html"><button type="button" class="btn btn-danger btn-lg paraLearn">Learn more</button></a>
-                <a href="pages/causes.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:10px;">
-                    <i class="fa-solid fa-circle-play" style="font-size: 2rem; color: crimson;"></i><p style="margin:0;">View funding targets</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</main>
-
-<main class="fifth">
-  <div class="eventshead"><h1>Phase-based funding targets</h1></div>
-  <div class="cards eventsCards">
-    <div class="card1 eventscard"><img src="assets/card4.png" alt="Phase 1"><h2>Phase 1 — $150,000</h2><p>Build the mother, newborn & child clinic with maternity room, newborn corner, pediatric room, basic lab, pharmacy, and sanitation setup.</p></div>
-    <div class="card1 eventscard"><img src="assets/card5.png" alt="Phase 2"><h2>Phase 2 — $300,000+</h2><p>Add emergency triage, observation beds, stronger maternal emergency support, and expanded diagnostics.</p></div>
-    <div class="card1 eventscard"><img src="assets/card6.png" alt="Phase 3"><h2>Phase 3 — $700,000+</h2><p>Grow toward a broader community health campus with inpatient care and future community space.</p></div>
-  </div>
-</main>
-
-<main class="horizontal">
-    <div class="cont1"><h1>150000</h1><p>Phase 1 target</p></div>
-    <div class="cont1"><h1>4</h1><p>core rooms to open first</p></div>
-    <div class="cont1"><h1>1</h1><p>donated plot of land</p></div>
-    <div class="cont1"><h1>1000</h1><p>ways to help share the mission</p></div>
-</main>
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <h3>Mother & Child Health Project</h3>
-      <p>A community-led health project in Hirshabelle, Somalia focused first on maternity, newborn, and child survival.</p>
-    </div>
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/causes.html">Funding Plan</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p>Location: Hirshabelle, Somalia</p>
-    </div>
-  </div>
-  <div class="footer-bottom"><p>&copy; 2026 Mother & Child Health Project. All Rights Reserved.</p></div>
-  <div id="scrollToTop"><svg class="progress-circle" width="50" height="50"><circle cx="25" cy="25" r="22"></circle><circle cx="25" cy="25" r="22" id="progress"></circle></svg><span class="arrow">▲</span></div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script>
-=======
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mother & Child Hospital Project | Beledweyne, Somalia</title>
-  <meta
-    name="description"
-    content="Help build a mother, newborn, and child-focused hospital project in Beledweyne, Somalia."
-  />
+  <title>Mother & Child Health Project | Hirshabelle, Somalia</title>
+  <meta name="description" content="A one-page fundraising website for a mother, newborn, and child health project in Hirshabelle, Somalia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <div class="logo">Mother & Child Hospital Project</div>
+      <a href="#top" class="brand">
+        <span class="brand-mark">MC</span>
+        <span>Mother & Child Health Project</span>
+      </a>
       <nav>
-        <a href="#story">Our Story</a>
-        <a href="#need">Why It Matters</a>
+        <a href="#about">About</a>
+        <a href="#need">Need</a>
         <a href="#funding">Funding</a>
-        <a href="#donate" class="nav-btn">Donate</a>
+        <a href="#donate" class="nav-cta">Donate</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Hirshabeele , Somalia</p>
-        <h1>Help Build a Safe Maternity and Child Care Center</h1>
-        <p class="hero-text">
-          The land has already been donated. Now we are raising funds to build
-          a life-saving facility focused first on mothers, newborns, and children
-          in one of the most underserved communities in the area.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#donate" class="btn btn-primary">Donate Now</a>
-          <a href="#funding" class="btn btn-secondary">See Funding Plan</a>
-        </div>
-
-        <div class="hero-note">
-          Start with what saves the most lives first:
-          <strong>safe childbirth, newborn care, and pediatric treatment.</strong>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <h2>Phase 1 Goal</h2>
-        <p class="goal-amount">$150,000</p>
-        <p>
-          To build and equip a focused Mother, Newborn & Child Clinic with:
-        </p>
-        <ul>
-          <li>Maternity / delivery room</li>
-          <li>Newborn stabilization corner</li>
-          <li>Pediatric consultation room</li>
-          <li>Basic pharmacy</li>
-          <li>Basic diagnostic lab</li>
-          <li>Water, sanitation, and power setup</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="story" class="section">
-    <div class="container two-col">
-      <div>
-        <p class="section-label">Our Story</p>
-        <h2>A donated piece of land can become a place that saves lives</h2>
-        <p>
-          This project began with a meaningful act of generosity: land in
-          Beledweyne was donated so it could serve the surrounding community.
-          The vision is to build a healthcare space that gives vulnerable
-          families access to safe maternity care, newborn support, and treatment
-          for children.
-        </p>
-        <p>
-          Rather than trying to promise a full hospital immediately, we are
-          starting with the most urgent need first: a strong mother and child
-          clinic. This makes the project more realistic, more transparent, and
-          more fundable.
-        </p>
-      </div>
-
-      <div class="panel image-panel">
-        <h3>Add your real land photo here</h3>
-        <p>
-          Replace this section later with a wide image of the actual land or
-          surrounding area in Beledweyne.
-        </p>
-        <p class="small">
-          Best first image: real land + community context.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="need" class="section alt">
-    <div class="container">
-      <p class="section-label">Why It Matters</p>
-      <h2>The biggest early impact is reducing preventable deaths among mothers and children</h2>
-
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-number">563</div>
-          <div class="stat-text">maternal deaths per 100,000 live births</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">32%</div>
-          <div class="stat-text">of births attended by trained professionals</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">106</div>
-          <div class="stat-text">under-five deaths per 1,000 live births</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">4 in 100</div>
-          <div class="stat-text">children die in the first month of life</div>
-        </div>
-      </div>
-
-      <div class="two-col gap-top">
-        <div class="panel">
-          <h3>Why start with maternity and children?</h3>
-          <p>
-            When mothers do not have access to skilled care during pregnancy and
-            childbirth, and when newborns and children cannot access timely care,
-            the consequences are often fatal. A focused mother-and-child clinic
-            can address some of the most urgent and preventable causes of death.
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hirshabelle, Somalia</p>
+          <h1>Help Build a Safe Place for Mothers, Newborns, and Children</h1>
+          <p class="lead">
+            The land has already been donated. We are now raising funds to build a simple,
+            high-impact health center focused first on maternity, newborn care, and child health.
           </p>
-          <ul class="check-list">
-            <li>Safer antenatal and postnatal care</li>
-            <li>Cleaner and safer deliveries</li>
-            <li>Faster newborn assessment and stabilization</li>
-            <li>Pediatric treatment for common illnesses</li>
-            <li>Basic nutrition and medication support</li>
-          </ul>
+          <div class="hero-actions">
+            <a href="#donate" class="btn btn-primary">Support Phase 1</a>
+            <a href="#funding" class="btn btn-secondary">View Funding Plan</a>
+          </div>
         </div>
 
-        <div class="panel">
-          <h3>What donors are really funding</h3>
-          <p>
-            Donors are not only funding a building. They are helping create a
-            trusted place where a pregnant woman can seek help before labor,
-            where a newborn can receive urgent early care, and where a sick child
-            can be treated before it is too late.
-          </p>
-          <p>
-            This is why the first phase should stay tightly focused on the
-            maternity and child ward.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <p class="section-label">Priority Department</p>
-      <h2>The Mother, Newborn & Child Ward</h2>
-      <p class="intro">
-        This is the heart of Phase 1 and should be the main message across the website.
-      </p>
-
-      <div class="cards-grid">
-        <div class="panel">
-          <h3>Antenatal Care</h3>
-          <p>Pregnancy checkups, risk screening, maternal monitoring, and referral support.</p>
-        </div>
-        <div class="panel">
-          <h3>Delivery Room</h3>
-          <p>Clean, dignified childbirth spaces with trained attendants and essential supplies.</p>
-        </div>
-        <div class="panel">
-          <h3>Newborn Corner</h3>
-          <p>Warmth, early newborn assessment, infection prevention, and basic stabilization.</p>
-        </div>
-        <div class="panel">
-          <h3>Pediatric Room</h3>
-          <p>Treatment for fever, dehydration, infection, diarrhea, and respiratory illness.</p>
-        </div>
-        <div class="panel">
-          <h3>Nutrition Support</h3>
-          <p>Basic child nutrition screening and care for vulnerable infants and young children.</p>
-        </div>
-        <div class="panel">
-          <h3>Pharmacy & Lab</h3>
-          <p>Essential medicines and simple tests to support maternity and child care.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="funding" class="section alt">
-    <div class="container">
-      <p class="section-label">Funding Targets</p>
-      <h2>Build in phases</h2>
-      <p class="intro">
-        Presenting clear phases makes the project more believable and easier to support.
-      </p>
-
-      <div class="phase-grid">
-        <div class="phase-card featured">
-          <span class="phase-tag">Phase 1</span>
-          <h3>Mother, Newborn & Child Clinic</h3>
-          <div class="phase-price">$150,000</div>
-          <p>
-            Build and equip the first clinic with a maternity room, newborn corner,
-            pediatric consultation room, pharmacy, basic lab, and essential infrastructure.
-          </p>
+        <aside class="hero-card">
+          <p class="card-label">Phase 1 Target</p>
+          <h2>$150,000</h2>
           <ul>
-            <li>Clinic structure</li>
             <li>Maternity / delivery room</li>
-            <li>Child consultation room</li>
-            <li>Basic medical equipment</li>
-            <li>Water, sanitation, electricity/solar</li>
-            <li>Initial staffing support</li>
+            <li>Newborn stabilization corner</li>
+            <li>Pediatric consultation room</li>
+            <li>Basic pharmacy and lab</li>
+            <li>Water, sanitation, and electricity setup</li>
           </ul>
-        </div>
+        </aside>
+      </div>
+    </section>
 
-        <div class="phase-card">
-          <span class="phase-tag">Phase 2</span>
-          <h3>Emergency & Expansion</h3>
-          <div class="phase-price">$300,000+</div>
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <p class="section-label">About the Project</p>
+          <h2>A donated piece of land can become a life-saving center</h2>
           <p>
-            Expand into emergency triage, observation beds, improved diagnostics,
-            and stronger response for complications.
+            This project begins with a generous act: land donated by your aunt to serve people in Hirshabelle.
+            The vision is to create a trusted place where mothers can receive safer care during pregnancy and childbirth,
+            newborns can be treated earlier, and children can access essential medical support closer to home.
           </p>
-          <ul>
-            <li>Emergency / triage area</li>
-            <li>Observation beds</li>
-            <li>Expanded maternal emergency support</li>
-            <li>Improved diagnostics</li>
-          </ul>
-        </div>
-
-        <div class="phase-card">
-          <span class="phase-tag">Phase 3</span>
-          <h3>Community Health Campus</h3>
-          <div class="phase-price">$700,000+</div>
           <p>
-            Grow toward a broader hospital campus with inpatient care, more services,
-            and potentially a mosque/community prayer space.
+            We are starting with the most urgent and realistic first step: a mother-and-child-focused clinic.
+            As support grows, the project can expand into broader emergency and community health services.
           </p>
-          <ul>
-            <li>Inpatient ward</li>
-            <li>Expanded outpatient services</li>
-            <li>Training/support space</li>
-            <li>Future mosque/community area</li>
-          </ul>
+        </div>
+
+        <div class="image-card">
+          <img src="assets/kids.jpg" alt="Children smiling" />
+          <div class="image-note">
+            Replace this with a real land or community photo from Hirshabelle when you're ready.
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="sponsor-box">
-        <h3>Sponsor a Room</h3>
-        <p>Large donors can sponsor specific parts of the project.</p>
-        <div class="sponsor-list">
-          <span>Delivery Room</span>
-          <span>Newborn Corner</span>
-          <span>Pediatric Room</span>
-          <span>Pharmacy</span>
-          <span>Lab</span>
-          <span>Water & Sanitation</span>
+    <section id="need" class="section section-soft">
+      <div class="container">
+        <p class="section-label">Why It Matters</p>
+        <h2>The strongest first investment is maternal and child survival</h2>
+        <div class="stats">
+          <article class="stat">
+            <span class="stat-number">563</span>
+            <span class="stat-text">maternal deaths per 100,000 live births</span>
+          </article>
+          <article class="stat">
+            <span class="stat-number">32%</span>
+            <span class="stat-text">of births attended by trained professionals</span>
+          </article>
+          <article class="stat">
+            <span class="stat-number">106</span>
+            <span class="stat-text">under-five deaths per 1,000 live births</span>
+          </article>
+          <article class="stat">
+            <span class="stat-number">4 in 100</span>
+            <span class="stat-text">children die in the first month of life</span>
+          </article>
+        </div>
+
+        <div class="priority">
+          <div class="priority-card">
+            <h3>Phase 1 Focus</h3>
+            <ul>
+              <li>Antenatal and postnatal care</li>
+              <li>Safer deliveries</li>
+              <li>Newborn assessment and stabilization</li>
+              <li>Pediatric care for common illness</li>
+              <li>Basic nutrition support</li>
+            </ul>
+          </div>
+          <div class="priority-card">
+            <h3>Why donors care</h3>
+            <p>
+              Donors are not just paying for a building. They are helping create a trusted place where a mother can arrive
+              before complications become fatal and where a child can receive treatment before illness becomes severe.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container two-col">
-      <div class="panel">
-        <p class="section-label">Suggested Donation Levels</p>
-        <h2>Make giving feel tangible</h2>
-        <ul class="donation-list">
-          <li><strong>$25</strong> — essential supplies for mothers and babies</li>
-          <li><strong>$50</strong> — medication and treatment support for a child</li>
-          <li><strong>$250</strong> — prenatal and maternal care support</li>
-          <li><strong>$1,000</strong> — help equip a maternity room</li>
-          <li><strong>$10,000+</strong> — sponsor a major room or service</li>
-        </ul>
+    <section id="funding" class="section">
+      <div class="container">
+        <p class="section-label">Funding Plan</p>
+        <h2>Simple, credible phases</h2>
+        <div class="phases">
+          <article class="phase featured">
+            <p class="phase-tag">Phase 1</p>
+            <h3>Mother, Newborn & Child Clinic</h3>
+            <p class="price">$150,000</p>
+            <p>Build and equip the first clinic with the core spaces and infrastructure needed to begin care.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-tag">Phase 2</p>
+            <h3>Emergency Expansion</h3>
+            <p class="price">$300,000+</p>
+            <p>Add triage, observation beds, improved diagnostics, and stronger support for complications.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-tag">Phase 3</p>
+            <h3>Community Health Campus</h3>
+            <p class="price">$700,000+</p>
+            <p>Expand toward inpatient care, broader health services, and future community infrastructure.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="panel">
-        <p class="section-label">Visual Strategy</p>
-        <h2>What pictures should appear first</h2>
-        <ol class="ordered-list">
-          <li>Real land photo in Beledweyne</li>
-          <li>Respectful community photo showing mothers/children</li>
-          <li>Simple concept sketch of the maternity and child ward</li>
-        </ol>
-        <p class="small">
-          That order shows the project is real, urgent, and buildable.
-        </p>
+    <section id="donate" class="section donate-band">
+      <div class="container donate-wrap">
+        <div>
+          <p class="section-label light">Donate</p>
+          <h2>Help fund Phase 1 first</h2>
+          <p>
+            Replace the sample links below with your actual donation page and contact email.
+          </p>
+        </div>
+        <div class="donate-actions">
+          <a href="https://example.com" class="btn btn-primary">Donate Online</a>
+          <a href="mailto:hello@example.com" class="btn btn-outline">Become a Sponsor</a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section id="donate" class="section donate-section">
-    <div class="container donate-wrap">
-      <div>
-        <p class="section-label light">Donate</p>
-        <h2>Help us build Phase 1 first</h2>
-        <p>
-          Replace these sample links with your real donation page, LaunchGood,
-          GoFundMe, PayPal, Stripe link, or sponsor contact email.
-        </p>
-      </div>
-
-      <div class="donate-buttons">
-        <a href="https://example.com" class="btn btn-primary">Donate Online</a>
-        <a href="mailto:hello@example.com" class="btn btn-light">Become a Sponsor</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-wrap">
       <div>
-        <h3>Mother & Child Hospital Project</h3>
-        <p>Beledweyne, Somalia</p>
+        <strong>Mother & Child Health Project</strong>
+        <p>Hirshabelle, Somalia</p>
       </div>
       <div>
         <p><strong>Contact</strong></p>
@@ -492,6 +182,5 @@
       </div>
     </div>
   </footer>
->>>>>>> d3088bba203df89bbf7d372962c5303a50e6a4d7
 </body>
 </html>
