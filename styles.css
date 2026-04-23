@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  font: inherit;
+}
+
 .container {
   width: min(1280px, 92%);
   margin: 0 auto;
@@ -487,12 +491,16 @@ a {
 }
 
 .plan-wrapper {
-  position: relative;
   background: white;
   border-radius: 16px;
   padding: 14px;
   box-shadow: var(--shadow);
   border: 1px solid #e5ecf8;
+}
+
+.plan-stage {
+  position: relative;
+  width: 100%;
 }
 
 .plan-image {
@@ -504,29 +512,31 @@ a {
 .hotspot {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: none;
-  background: rgba(36, 82, 183, 0.18);
+  background: rgba(36, 82, 183, 0.14);
   display: grid;
   place-items: center;
   cursor: pointer;
   padding: 0;
+  z-index: 3;
 }
 
 .hotspot span {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: #2452b7;
-  box-shadow: 0 0 0 8px rgba(36, 82, 183, 0.12);
+  box-shadow: 0 0 0 10px rgba(36, 82, 183, 0.14);
+  transition: all 0.2s ease;
 }
 
 .hotspot:hover span,
 .hotspot.active span {
   background: #183f98;
-  box-shadow: 0 0 0 10px rgba(36, 82, 183, 0.2);
+  box-shadow: 0 0 0 12px rgba(36, 82, 183, 0.22);
 }
 
 .plan-info-card {
