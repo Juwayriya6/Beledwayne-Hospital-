@@ -254,8 +254,8 @@ button {
 
 .two-column {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) 420px;
-  gap: 34px;
+  grid-template-columns: minmax(0, 1.7fr) minmax(320px, 380px);
+  gap: 28px;
   align-items: start;
 }
 
@@ -299,8 +299,8 @@ button {
 
 .build-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .build-item {
@@ -336,11 +336,13 @@ button {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+  width: 100%;
 }
 
 .goal-card,
 .impact-card {
+  width: 100%;
   border-radius: 14px;
   box-shadow: var(--shadow);
 }
@@ -742,11 +744,7 @@ button {
 }
 
 /* Responsive */
-@media (max-width: 1180px) {
-  .build-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+@media (max-width: 1250px) {
   .two-column {
     grid-template-columns: 1fr;
   }
@@ -754,9 +752,10 @@ button {
   .sidebar {
     max-width: 560px;
     margin: 0 auto;
-    width: 100%;
   }
+}
 
+@media (max-width: 1180px) {
   .plan-layout,
   .vision-grid {
     grid-template-columns: 1fr;
@@ -799,6 +798,12 @@ button {
 
   .hero-copy p {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .build-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
