@@ -1,24 +1,14 @@
-:root {
-  --blue: #1e6fd9;
-  --light-blue: #eef5ff;
-  --dark: #1a2b3c;
-  --gray: #6b7280;
-}
-
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: var(--dark);
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
 }
 
 .container {
   width: 90%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-}
-
-.narrow {
-  max-width: 600px;
 }
 
 header {
@@ -30,120 +20,104 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
+h1, h2, h3 {
+  margin-bottom: 10px;
 }
 
-/* HERO */
 .hero {
-  background: var(--light-blue);
-  text-align: center;
-  padding: 80px 20px;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  color: white;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
 }
 
-.hero p {
-  color: var(--gray);
+.hero-content {
+  padding-top: 150px;
   max-width: 600px;
-  margin: 20px auto;
 }
 
-/* PROGRESS BAR */
-.progress-box {
-  margin: 20px auto;
-  max-width: 400px;
+.btn {
+  background: #2b6cb0;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
 }
 
-.progress-bar {
-  background: #ddd;
-  height: 10px;
+.btn:hover {
+  background: #1e4f8a;
+}
+
+.large {
+  font-size: 18px;
+  padding: 15px 25px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.stat h2 {
+  color: #2b6cb0;
+}
+
+.about, .plan, .funding {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.fund-box {
+  background: #f5f9ff;
+  padding: 30px;
   border-radius: 10px;
 }
 
 .progress {
-  background: var(--blue);
+  background: #ddd;
   height: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
 }
 
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  text-align: center;
+.progress-bar {
+  background: #2b6cb0;
+  height: 100%;
+  border-radius: 5px;
 }
 
-.section.light {
-  background: #f8fbff;
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  border: 1px solid #eee;
-  padding: 20px;
-  width: 200px;
-  border-radius: 10px;
-}
-
-/* TIERS */
-.tiers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tier {
-  border: 1px solid #eee;
-  padding: 20px;
-  width: 180px;
-  border-radius: 10px;
-}
-
-.highlight {
-  border: 2px solid var(--blue);
-}
-
-/* DONATE */
 .donate {
-  background: var(--blue);
+  background: #2b6cb0;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 
-.btn {
-  background: var(--blue);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.btn.big {
-  font-size: 18px;
-}
-
-.btn.small {
-  padding: 8px 14px;
+.small {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 footer {
   text-align: center;
-  padding: 30px;
-  color: var(--gray);
+  padding: 20px;
+  background: #f0f0f0;
 }
