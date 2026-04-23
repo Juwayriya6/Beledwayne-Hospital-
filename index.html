@@ -31,6 +31,7 @@
         <a href="#about">About</a>
         <a href="#why">Why It Matters</a>
         <a href="#plan">Our Plan</a>
+        <a href="#interactive-plan">Floor Plan</a>
         <a href="donate.html">How You Can Help</a>
       </nav>
 
@@ -192,6 +193,112 @@
         </aside>
       </div>
     </section>
+
+    <section class="interactive-plan" id="interactive-plan">
+      <div class="container">
+        <div class="section-heading">
+          <h2>EXPLORE THE FUTURE CLINIC</h2>
+          <p>
+            Tap the floor plan to see how each part of the clinic will serve mothers,
+            newborns, and children in Hirshabelle.
+          </p>
+        </div>
+
+        <div class="plan-layout">
+          <div class="plan-wrapper">
+            <img
+              src="images/floorplan.jpg"
+              alt="Proposed hospital floor plan"
+              class="plan-image"
+            />
+
+            <button
+              class="hotspot active"
+              style="top: 74%; left: 44%;"
+              data-title="Maternity Ward"
+              data-text="A safe, clean space for mothers to give birth with dignity and skilled support."
+            >
+              <span></span>
+            </button>
+
+            <button
+              class="hotspot"
+              style="top: 72%; left: 56%;"
+              data-title="Laboratory"
+              data-text="Basic diagnostics to help identify illness, guide treatment, and support safer care."
+            >
+              <span></span>
+            </button>
+
+            <button
+              class="hotspot"
+              style="top: 72%; left: 63%;"
+              data-title="Emergency Room"
+              data-text="Immediate response for urgent cases affecting mothers, newborns, and children."
+            >
+              <span></span>
+            </button>
+
+            <button
+              class="hotspot"
+              style="top: 79%; left: 18%;"
+              data-title="Outpatient Department"
+              data-text="Everyday consultations and treatment for children, women, and families needing primary care."
+            >
+              <span></span>
+            </button>
+
+            <button
+              class="hotspot"
+              style="top: 87%; left: 33%;"
+              data-title="Dining Hall / Support Area"
+              data-text="A support space that helps the clinic function as a humane and organized care environment."
+            >
+              <span></span>
+            </button>
+          </div>
+
+          <div class="plan-info-card">
+            <p class="info-kicker">Interactive Plan</p>
+            <h3 id="planTitle">Maternity Ward</h3>
+            <p id="planText">
+              A safe, clean space for mothers to give birth with dignity and skilled support.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Why it matters</strong>
+                <span id="planReason">
+                  This is where life-saving maternal and newborn care begins.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-highlights">
+          <div>
+            <strong>Maternity Ward</strong>
+            <p>Safe, clean delivery space for mothers</p>
+          </div>
+
+          <div>
+            <strong>Emergency Room</strong>
+            <p>Immediate care for critical cases</p>
+          </div>
+
+          <div>
+            <strong>Laboratory</strong>
+            <p>Testing and diagnostics on-site</p>
+          </div>
+
+          <div>
+            <strong>Outpatient Department</strong>
+            <p>Daily care for children and families</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -200,42 +307,35 @@
       <p>Contact: hello@example.com</p>
     </div>
   </footer>
+
+  <script>
+    const hotspots = document.querySelectorAll(".hotspot");
+    const planTitle = document.getElementById("planTitle");
+    const planText = document.getElementById("planText");
+    const planReason = document.getElementById("planReason");
+
+    const reasons = {
+      "Maternity Ward": "This is where life-saving maternal and newborn care begins.",
+      "Laboratory": "Testing helps staff respond faster and more accurately to illness.",
+      "Emergency Room": "Critical cases need immediate stabilization to prevent avoidable deaths.",
+      "Outpatient Department": "Most families will first enter care through this everyday clinic space.",
+      "Dining Hall / Support Area": "Well-planned support spaces make the clinic more functional and sustainable."
+    };
+
+    hotspots.forEach((hotspot) => {
+      hotspot.addEventListener("click", () => {
+        hotspots.forEach((h) => h.classList.remove("active"));
+        hotspot.classList.add("active");
+
+        const title = hotspot.dataset.title;
+        const text = hotspot.dataset.text;
+
+        planTitle.textContent = title;
+        planText.textContent = text;
+        planReason.textContent =
+          reasons[title] || "This space supports the overall operation of the clinic.";
+      });
+    });
+  </script>
 </body>
 </html>
-<section class="floorplan">
-  <div class="container">
-
-    <h2>Explore the Future Clinic</h2>
-    <p>
-      This is the planned layout of the Mother & Child Health Clinic. 
-      Each space is designed to provide life-saving care to mothers and children.
-    </p>
-
-    <div class="plan-image">
-      <img src="images/floorplan.jpg" alt="Hospital floor plan">
-    </div>
-
-    <div class="plan-highlights">
-      <div>
-        <strong>Maternity Ward</strong>
-        <p>Safe, clean delivery space for mothers</p>
-      </div>
-
-      <div>
-        <strong>Emergency Room</strong>
-        <p>Immediate care for critical cases</p>
-      </div>
-
-      <div>
-        <strong>Laboratory</strong>
-        <p>Testing and diagnostics on-site</p>
-      </div>
-
-      <div>
-        <strong>Outpatient Department</strong>
-        <p>Daily care for children and families</p>
-      </div>
-    </div>
-
-  </div>
-</section>
