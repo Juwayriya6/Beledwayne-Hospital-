@@ -595,3 +595,35 @@ a {
     flex-direction: column;
   }
 }
+/* Donate page */
+
+.donate-page {
+  padding: 80px 0;
+  background: #fafbfe;
+  text-align: center;
+}
+
+.donate-page h1 {
+  color: var(--blue);
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.donation-card {
+  background: white;
+  border: 
