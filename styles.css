@@ -1,31 +1,26 @@
 :root {
   --blue: #1e6fd9;
-  --light-blue: #eaf3ff;
+  --light-blue: #eef5ff;
   --dark: #1a2b3c;
   --gray: #6b7280;
-  --white: #ffffff;
-}
-
-/* Reset */
-* {
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--dark);
-  background: var(--white);
 }
 
-/* Layout */
 .container {
   width: 90%;
   max-width: 900px;
   margin: auto;
 }
 
-/* Header */
+.narrow {
+  max-width: 600px;
+}
+
 header {
   background: white;
   border-bottom: 1px solid #eee;
@@ -35,14 +30,13 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
   font-family: 'Playfair Display', serif;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   background: var(--light-blue);
   text-align: center;
@@ -54,12 +48,30 @@ header {
 }
 
 .hero p {
+  color: var(--gray);
   max-width: 600px;
   margin: 20px auto;
-  color: var(--gray);
 }
 
-/* Sections */
+/* PROGRESS BAR */
+.progress-box {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress {
+  background: var(--blue);
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* SECTIONS */
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -69,38 +81,42 @@ header {
   background: #f8fbff;
 }
 
-/* Stats */
-.stats {
+/* GRID */
+.grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 30px;
-  flex-wrap: wrap;
 }
 
 .card {
   background: white;
   border: 1px solid #eee;
   padding: 20px;
-  border-radius: 10px;
   width: 200px;
+  border-radius: 10px;
 }
 
-.card h3 {
-  color: var(--blue);
+/* TIERS */
+.tiers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* List */
-.list {
-  list-style: none;
-  padding: 0;
+.tier {
+  border: 1px solid #eee;
+  padding: 20px;
+  width: 180px;
+  border-radius: 10px;
 }
 
-.list li {
-  margin: 10px 0;
+.highlight {
+  border: 2px solid var(--blue);
 }
 
-/* Donate */
+/* DONATE */
 .donate {
   background: var(--blue);
   color: white;
@@ -108,26 +124,26 @@ header {
   padding: 60px 20px;
 }
 
-/* Buttons */
 .btn {
-  display: inline-block;
   background: var(--blue);
   color: white;
   padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
+  display: inline-block;
   margin-top: 20px;
+}
+
+.btn.big {
+  font-size: 18px;
 }
 
 .btn.small {
   padding: 8px 14px;
-  font-size: 14px;
 }
 
-/* Footer */
 footer {
   text-align: center;
-  padding: 30px 0;
-  font-size: 14px;
+  padding: 30px;
   color: var(--gray);
 }
